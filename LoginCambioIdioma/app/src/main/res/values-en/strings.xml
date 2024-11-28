@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LoginCambioIdioma</string>
+    <string name="textUser">User</string>
+    <string name="textPassword">Password</string>
+    <string name="textLogin">Sign In</string>
+</resources>

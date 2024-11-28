@@ -1,0 +1,38 @@
+
+
+Objetivo: Crear una nueva pantalla (Activity) que muestre todos los nombres de los productos almacenados en la base de datos, utilizando lo aprendido.
+
+Instrucciones
+Crear una Nueva Activity
+
+Crea una nueva Activity en el proyecto, nombrándola ListaProductosActivity.
+En el archivo de diseño XML de esta nueva Activity, añade un ListView que mostrará la lista de productos.
+
+Obtener los Datos de la Base de Datos
+
+Dentro de ListaProductosActivity, utiliza la clase AdminSQLiteOpenHelper para obtener acceso a la base de datos.
+Crea una consulta SQL para obtener solo los nombres de los productos almacenados en la tabla articulos. 
+
+
+Recorrer los Resultados
+
+Almacena los nombres de los productos obtenidos en una lista (ArrayList<String>).
+Asegúrate de revisar si la base de datos contiene productos antes de intentar mostrarlos.
+Si la base de datos está vacía, muestra un mensaje (por ejemplo, usando Toast) indicando que no hay productos registrados.
+
+
+Mostrar los Datos en el ListView
+
+Usa un ArrayAdapter para adaptar los nombres de los productos almacenados en el ArrayList y poder mostrarlos en el ListView.
+Configura el ArrayAdapter para mostrar cada nombre en un formato básico (android.R.layout.simple_list_item_1).
+
+
+Abrir ListaProductosActivity desde MainActivity
+
+Añade un botón en MainActivity que, al ser pulsado, abra la nueva Activity (ListaProductosActivity). 
+
+
+Detalles Importantes
+Base de Datos: Recuerda que para obtener los datos de la base de datos en modo solo lectura, debes usar el método getReadableDatabase() de AdminSQLiteOpenHelper.
+Cursor: Usa un Cursor para recorrer los datos obtenidos de la consulta SQL y asegurarte de que obtienes todos los nombres de los productos.
+Cerrar Recursos: No olvides cerrar el Cursor y la conexión a la base de datos una vez hayas terminado de usarlos para liberar recursos.

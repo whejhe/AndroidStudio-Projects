@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Multimedia</string>
+    <string name="audio_sound_long">MEDIA PLAYER</string>
+    <string name="audio_sound_short">SOUND POOL</string>
+</resources>

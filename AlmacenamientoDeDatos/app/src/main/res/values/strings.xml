@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AlmacenamientoDeDatos</string>
+    <string name="Email">Ingrese su Email</string>
+    <string name="ir">Guardar</string>
+</resources>

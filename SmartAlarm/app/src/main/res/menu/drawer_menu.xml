@@ -1,0 +1,37 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/menu_group_1">
+        <item
+            android:id="@+id/movement_phone"
+            android:icon="@drawable/ic_vibration_black_24dp"
+            android:title="@string/title_activity_MP" />
+        <item
+            android:id="@+id/movement_in_around"
+            android:icon="@drawable/ic_camera_alt_black_24dp"
+            android:title="@string/title_activity_MI" />
+        <item
+            android:id="@+id/charge_check"
+            android:icon="@drawable/ic_battery_charging_full_black_24dp"
+            android:title="@string/title_activity_CC" />
+        <item
+            android:id="@+id/control_with_sms"
+            android:icon="@drawable/ic_message_black_24dp"
+            android:title="@string/title_activity_CS"
+
+           />
+
+    </group>
+    <group android:id="@+id/menu_group_2">
+        <item
+            android:id="@+id/help"
+            android:title="@string/title_activity_help" />
+        <item
+            android:id="@+id/upgrade"
+            android:title="@string/Upgrade_to_full_version" />
+        <item
+            android:id="@+id/another_app"
+            android:title="@string/Rate_app" />
+        <item
+            android:id="@+id/about"
+            android:title="@string/About_us" />
+    </group>
+</menu>

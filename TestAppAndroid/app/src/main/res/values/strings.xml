@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">App de Test</string>
+    <string name="comenzar_test">Comenzar Test</string>
+    <string name="reintentar_test">Prueba otra vez</string>
+    <string name="pregunta">¿Como debo llamarte?</string>
+    <string name="tuNombre">Escribe tu nombre</string>
+
+    <string name="pregunta_1">¿Qué función se utiliza para mostrar un layout XML en una activity?</string>
+    <string name="opcion_1">onCreateView()</string>
+    <string name="opcion_2">setContentView()</string>
+    <string name="opcion_3">inflateView()</string>
+
+    <string name="pregunta_2">¿Qué método del ciclo de vida de una activity se llama justo antes de que la activity sea visible para el usuario?</string>
+    <string name="opcion_4">onStop()</string>
+    <string name="opcion_5">onResume()</string>
+    <string name="opcion_6">onStart()</string>
+
+    <string name="pregunta_3">¿Cuál es el método que se ejecuta cuando se crea una actividad?</string>
+    <string name="opcion_7">onStart()</string>
+    <string name="opcion_8">onCreate()</string>
+    <string name="opcion_9">onDestroy()</string>
+
+    <string name="resultado">Tu resultado es:</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="escribe_tu_nombre">Escribe tu nombre</string>
+</resources>

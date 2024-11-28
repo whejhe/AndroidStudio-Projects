@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">LoginCambioIdioma</string>
+    <string name="textUser">Usuario</string>
+    <string name="textPassword">Contraseña</string>
+    <string name="textLogin">Iniciar Sesión</string>
+</resources>

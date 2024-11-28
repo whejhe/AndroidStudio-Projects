@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="h.mahdi.alarm">
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.front" android:required="false" />
+    <!--  <uses-permission android:name="ir.mservices.market.BILLING" />-->
+         <uses-permission android:name="com.farsitel.bazaar.permission.PAY_THROUGH_BAZAAR" />
+     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+     <uses-permission android:name="android.permission.CAMERA" />
+     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+     <uses-permission android:name="android.permission.RECEIVE_SMS" />
+     <uses-permission android:name="android.permission.SEND_SMS" />
+     <uses-permission android:name="android.permission.CAMERA" />
+     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+
+
+     <supports-screens
+         android:anyDensity="true"
+         android:largeScreens="true"
+         android:normalScreens="true"
+         android:smallScreens="true"
+         android:xlargeScreens="true" />
+
+     <application
+         android:allowBackup="true"
+         android:icon="@mipmap/ic_launcher"
+         android:label="@string/app_name"
+         android:roundIcon="@mipmap/ic_launcher_round"
+         android:screenOrientation="portrait"
+         android:supportsRtl="true"
+         android:theme="@style/AppTheme">
+         <activity
+             android:name=".ChargeCheck"
+             android:label="@string/title_activity_CC"
+             android:resizeableActivity="false"
+             android:screenOrientation="portrait">
+             <intent-filter>
+                 <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                 <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+             </intent-filter>
+         </activity>
+         <activity
+             android:name=".ControlWithSMS"
+             android:label="@string/app_name"
+             android:resizeableActivity="false">
+
+         </activity>
+         <activity
+         android:name=".MovementInAround"
+             android:label="@string/title_activity_MI"
+         android:resizeableActivity="false"
+         android:screenOrientation="portrait"></activity>
+         <activity
+             android:name=".help"
+             android:label="@string/title_activity_help"
+             android:resizeableActivity="false"
+             android:screenOrientation="portrait"></activity>
+         <activity
+             android:name=".TakePicture.TakePicture"
+             android:label="@string/app_name"
+             android:theme="@style/Theme.Transparent" />
+
+         <activity
+             android:name=".RecordVideo.RecordVideo"
+             android:label="@string/app_name"
+             android:theme="@style/Theme.Transparent" />
+
+         <activity
+             android:name=".CWM_Setting"
+             android:label="@string/app_name"
+           />
+
+         <service android:name=".S_MovementInAround" />
+         <service android:name=".Alarm" />
+         <service android:name=".SMS_R_Service" />
+         <receiver android:name=".ChargeBroadcast">
+             <intent-filter>
+                 <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                 <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+             </intent-filter>
+         </receiver>
+         <receiver android:name=".BroadCasts">
+             <intent-filter>
+                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+             </intent-filter>
+         </receiver>
+         <receiver android:name=".SMS_Broadcast" android:enabled="true">
+             <intent-filter android:priority="2147483647">
+                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+             </intent-filter>
+         </receiver>
+         <activity
+             android:name=".MovementPhone"
+             android:label="@string/app_name"
+             android:screenOrientation="portrait"
+             android:theme="@style/AppTheme">
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+                 <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+         </activity>
+     </application>
+
+ </manifest>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".help"
+    android:background="@color/back_ground"
+    tools:showIn="@layout/help">
+
+    <Button
+        android:id="@+id/expand_bottom_sheet_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="مکان تصاویر و فیلم های گرفته شده"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/collapse_bottom_sheet_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/expand_bottom_sheet_button"
+        android:text="کاربرد های هر بخش"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/hide_bottom_sheet_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/collapse_bottom_sheet_button"
+        android:text="کاربرد آیتم های قسمت تنظیمات"
+        android:textSize="17sp" />
+
+</RelativeLayout>

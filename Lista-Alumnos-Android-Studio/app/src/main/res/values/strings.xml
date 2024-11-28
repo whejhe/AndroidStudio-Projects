@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lista-Alumnos-Android-Studio</string>
+    <string name="nota">Lista de alumnos</string>
+    <string name="mensaje_boton">Hola que tal</string>
+</resources>
