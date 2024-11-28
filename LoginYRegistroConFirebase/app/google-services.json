@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "321204949440",
+    "project_id": "loginyregistroconandroidstudio",
+    "storage_bucket": "loginyregistroconandroidstudio.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321204949440:android:62a09a3eac938f5500f825",
+        "android_client_info": {
+          "package_name": "com.dam.loginyregistroconfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAG5Hi16M7tFmsEH97tKXFo1EU6N64LRQw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
