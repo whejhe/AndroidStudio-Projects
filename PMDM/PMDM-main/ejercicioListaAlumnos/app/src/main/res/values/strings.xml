@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ejercicioListaAlumnos</string>
+    <string name="indicaciones">Pulse en un alumno para ver su nota</string>
+</resources>

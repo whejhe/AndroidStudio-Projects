@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Monicius JR</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="ingresar">INGRESAR</string>
+    <string name="correo_electr_nico">Correo Electrónico</string>
+    <string name="volver">Volver</string>
+    <string name="media_player">MEDIA PLAYER</string>
+    <string name="ir_a_sonido">Ir a Sonido</string>
+    <string name="municipios">Municipios</string>
+    <string name="_0">0</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="mas">+</string>
+    <string name="cero">0</string>
+    <string name="menos">-</string>
+    <string name="por">*</string>
+    <string name="igual">=</string>
+    <string name="div">/</string>
+    <string name="restaurar_valores">RESTAURAR VALORES</string>
+    <string name="pasar_a_scrollview">Pasar a scrollView</string>
+    <string name="backtoback">Volver</string>
+    <string name="usuario">Usuario</string>
+    <string name="contrasena">Contraseña</string>
+</resources>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/codigo_pt"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/fondo_txt"
+        android:ems="10"
+        android:hint="@string/pedir_codigo"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/desc_pt"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/desc_pt"
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/fondo_txt"
+        android:ems="10"
+        android:gravity="start"
+        android:hint="@string/pedir_descripcion"
+        android:inputType="text"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/codigo_pt" />
+
+    <EditText
+        android:id="@+id/precio_pt"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/fondo_txt"
+        android:ems="10"
+        android:hint="@string/pedir_precio"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/desc_pt"
+        app:layout_constraintStart_toStartOf="@+id/desc_pt"
+        app:layout_constraintTop_toBottomOf="@+id/desc_pt" />
+
+    <Button
+        android:id="@+id/registrar_bot"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#558B2F"
+        android:onClick="registrar"
+        android:text="@string/registar_bot"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/precio_pt"
+        app:layout_constraintStart_toStartOf="@+id/precio_pt"
+        app:layout_constraintTop_toBottomOf="@+id/precio_pt"
+        app:rippleColor="#A2DA08" />
+
+    <Button
+        android:id="@+id/modificar_bot"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#F9A825"
+        android:onClick="modificar"
+        android:text="@string/modificar_bot"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/registrar_bot"
+        app:layout_constraintStart_toStartOf="@+id/registrar_bot"
+        app:layout_constraintTop_toBottomOf="@+id/registrar_bot"
+        app:rippleColor="#FFC800" />
+
+    <Button
+        android:id="@+id/eliminar_bot"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#C62828"
+        android:onClick="eliminar"
+        android:text="@string/eliminar_bot"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/modificar_bot"
+        app:layout_constraintStart_toStartOf="@+id/modificar_bot"
+        app:layout_constraintTop_toBottomOf="@+id/modificar_bot"
+        app:rippleColor="#FA003A" />
+
+    <Button
+        android:id="@+id/buscar_bot"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="67dp"
+        android:backgroundTint="#610277BD"
+        android:onClick="buscar"
+        android:text="@string/buscar_bot"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/codigo_pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/codigo_pt"
+        app:layout_constraintTop_toTopOf="@+id/codigo_pt"
+        app:layout_constraintVertical_bias="0.0"
+        app:rippleColor="#8003FFEA" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="54dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/titulo"
+        android:textSize="43sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/boton_sigView"
+        android:layout_width="280dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#00838F"
+        android:onClick="irLista"
+        android:text="@string/nuevaActivity_bot"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/eliminar_bot"
+        app:layout_constraintStart_toStartOf="@+id/eliminar_bot"
+        app:layout_constraintTop_toBottomOf="@+id/eliminar_bot" />
+</androidx.constraintlayout.widget.ConstraintLayout>

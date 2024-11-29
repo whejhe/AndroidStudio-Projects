@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Habitos</string>
+    <string name="HintPlainText">Añada un nuevo habito</string>
+    <string name="txtBoton">Añadir</string>
+    <string name="editBoton">Editar</string>
+    <string name="elimBoton">Eliminar</string>
+</resources>

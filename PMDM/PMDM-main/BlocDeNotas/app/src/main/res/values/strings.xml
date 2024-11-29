@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BlocDeNotas</string>
+    <string name="boton_guardar">Guardar</string>
+    <string name="hintTXT">Pulse para escribir</string>
+</resources>

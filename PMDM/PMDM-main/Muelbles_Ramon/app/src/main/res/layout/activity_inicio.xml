@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".inicio">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hind_medium"
+        android:text="@string/inicio"
+        android:textColor="#213140"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/perfil_boton"
+        app:layout_constraintEnd_toStartOf="@+id/carrito_boton"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toEndOf="@+id/perfil_boton" />
+
+    <ImageButton
+        android:id="@+id/carrito_boton"
+        android:layout_width="74dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="irCarrito"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@mipmap/carrito" />
+
+    <ImageButton
+        android:id="@+id/perfil_boton"
+        android:layout_width="77dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="irCuenta"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058"
+        app:srcCompat="@mipmap/persona_fondo" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.124"
+        app:srcCompat="@mipmap/linea" />
+
+    <ImageButton
+        android:id="@+id/mesas_boton"
+        android:layout_width="345dp"
+        android:layout_height="339dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="irMesas"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@mipmap/boton_mesas" />
+
+    <ImageButton
+        android:id="@+id/sillas_boton"
+        android:layout_width="346dp"
+        android:layout_height="328dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="irSillas"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mesas_boton"
+        app:layout_constraintVertical_bias="0.112"
+        app:srcCompat="@mipmap/boton_sillas" />
+</androidx.constraintlayout.widget.ConstraintLayout>

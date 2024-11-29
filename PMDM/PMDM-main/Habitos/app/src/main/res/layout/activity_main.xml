@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/nuevoHabito"
+        android:layout_width="229dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="@string/HintPlainText"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <ListView
+        android:id="@+id/listaHabitos"
+        android:layout_width="374dp"
+        android:layout_height="612dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nuevoHabito"
+        app:layout_constraintVertical_bias="0.017" />
+
+    <Button
+        android:id="@+id/boton_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="69dp"
+        android:layout_marginBottom="68dp"
+        android:backgroundTint="#ED6700"
+        android:text="@string/editBoton"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/boton_elim"
+        app:layout_constraintHorizontal_bias="0.386"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listaHabitos"
+        app:layout_constraintVertical_bias="1.0"
+        app:rippleColor="#FFC800" />
+
+    <Button
+        android:id="@+id/boton_elim"
+        android:layout_width="wrap_content"
+        android:layout_height="69dp"
+        android:layout_marginEnd="52dp"
+        android:backgroundTint="#CA1010"
+        android:text="@string/elimBoton"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/boton_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/boton_edit"
+        app:layout_constraintVertical_bias="0.0"
+        app:rippleColor="#FF592C" />
+
+    <Button
+        android:id="@+id/boton_annadir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1B3049"
+        android:onClick="annadirHabito"
+        android:text="@string/txtBoton"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/nuevoHabito"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.719"
+        app:layout_constraintStart_toEndOf="@+id/nuevoHabito"
+        app:layout_constraintTop_toTopOf="@+id/nuevoHabito"
+        app:layout_constraintVertical_bias="0.0"
+        app:rippleColor="#00B2E8" />
+</androidx.constraintlayout.widget.ConstraintLayout>

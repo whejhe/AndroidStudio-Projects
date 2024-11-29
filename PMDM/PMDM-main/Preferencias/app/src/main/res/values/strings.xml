@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Preferencias</string>
+    <string name="email_hint">pepe@gmail.com</string>
+    <string name="guardar_bot">Guardar</string>
+</resources>

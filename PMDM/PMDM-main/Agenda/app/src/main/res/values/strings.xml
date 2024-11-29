@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Agenda</string>
+    <string name="txt_nombre">Nombre del contacto</string>
+    <string name="txt_datos">Datos del contacto</string>
+    <string name="buscar">🔍Buscar</string>
+    <string name="guardar">⬇️Guardar</string>
+</resources>
