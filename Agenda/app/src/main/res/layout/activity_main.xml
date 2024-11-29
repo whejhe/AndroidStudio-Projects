@@ -8,49 +8,69 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/txtNombre"
-        android:layout_width="230dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="100dp"
+        android:id="@+id/txt_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
         android:ems="10"
-        android:hint="@string/nombre"
+        android:hint="@string/txt_nombre"
         android:inputType="text"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.472"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/txtDatos"
-        android:layout_width="220dp"
-        android:layout_height="68dp"
-        android:layout_marginTop="92dp"
+        android:id="@+id/txt_datos"
+        android:layout_width="296dp"
+        android:layout_height="243dp"
+        android:layout_marginTop="44dp"
+        android:background="#03A9F4"
+        android:backgroundTint="#A12196F3"
         android:ems="10"
-        android:hint="@string/datos"
-        android:inputType="text"
+        android:gravity="start|top"
+        android:hint="@string/txt_datos"
+        android:inputType="textMultiLine"
+        android:scrollbarSize="5dp"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_nombre"
+        app:layout_constraintStart_toStartOf="@+id/txt_nombre"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nombre" />
+
+    <Button
+        android:id="@+id/buscar_bot"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        android:layout_marginStart="52dp"
+        android:backgroundTint="#00BCD4"
+        android:onClick="buscar"
+        android:text="@string/buscar"
+        android:textColorLink="#FF0000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65"
+        app:rippleColor="#11FF00"
+        app:strokeColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/guardar_bot"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        android:backgroundTint="#26C6DA"
+        android:onClick="guardar"
+        android:text="@string/guardar"
+        android:textColorLink="#FF0000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+        app:layout_constraintHorizontal_bias="0.265"
+        app:layout_constraintStart_toEndOf="@+id/buscar_bot"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65"
+        app:rippleColor="#00FFAE"
+        app:strokeColor="#FFFFFF" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="104dp"
-        android:onClick="Buscar"
-        android:text="@string/Buscar"
-        app:layout_constraintTop_toBottomOf="@+id/txtDatos"
-        tools:layout_editor_absoluteX="234dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="104dp"
-        android:onClick="Guardar"
-        android:text="@string/Guardar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtDatos" />
 </androidx.constraintlayout.widget.ConstraintLayout>

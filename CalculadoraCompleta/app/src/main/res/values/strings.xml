@@ -1,0 +1,22 @@
+<!-- res/values/strings.xml -->
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="default_result">0</string>
+    <string name="error_message">Error</string>
+    <string name="button_clear">C</string>
+    <string name="button_equals">=</string>
+    <string name="button_add">+</string>
+    <string name="button_subtract">-</string>
+    <string name="button_multiply">*</string>
+    <string name="button_divide">/</string>
+    <string name="cero">0</string>
+    <string name="uno">1</string>
+    <string name="dos">2</string>
+    <string name="tres">3</string>
+    <string name="cuatro">4</string>
+    <string name="cinco">5</string>
+    <string name="seis">6</string>
+    <string name="siete">7</string>
+    <string name="ocho">8</string>
+    <string name="nueve">9</string>
+</resources>
